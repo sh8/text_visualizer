@@ -18,7 +18,6 @@ class TextMap < ActiveRecord::Base
 
 	def format_text
 
-
 		renderer = MyHTMLRenderer.new(render_options = {})
 		markdown = Redcarpet::Markdown.new(renderer, extensions = {})
 
