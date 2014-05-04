@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
-	 background-color: #D8F6CE;
+	 //background-color: #D8F6CE;
  }
 
 
@@ -15,5 +15,17 @@ body {
 	
 // }
 
-.container {
+.text-area {
+ 	height: 500px;
+ 	width: 500px;
+ }
+
+
+.item { 
+	width: 25%; 
+	background-color: #D8F6CE;
+	float: left;
+}
+.item.w2 { 
+	width: 50%; 
 }

@@ -5,7 +5,7 @@ class MyHTMLRenderer < Redcarpet::Render::HTML
   	@h_used = true
   	if header_level == 1
   		if @h_used == true
-  			s = "</div><div><h#{header_level}>#{text}</h#{header_level}>"
+  			s = "</div><div class='item'><h#{header_level}>#{text}</h#{header_level}>"
   			return s
   		end
   	end
