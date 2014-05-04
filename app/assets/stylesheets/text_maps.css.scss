@@ -2,15 +2,18 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.centered { margin: 0 auto; }
-#container{
-    border:1px solid #dadada;
+body {
+	 background-color: #D8F6CE;
+ }
+
+
+
+#footer {
+	position: absolute;
+	bottom: 40px;
+	width: 100%;
+	
 }
-.box {
-    margin: 5px;
-    padding: 5px;
-    background: #D8D5D2;
-    float: left;
+
+.container {
 }
-.col2 { width: 180px; }
-.col4 { width: 380px; }

@@ -1,27 +1,24 @@
-<script>
-  $(function(){
-    $('#container').masonry({
-      itemSelector: '.box',
-      columnWidth: 200 //一列の幅サイズを指定
-    });
-  });
-</script>
 
-<p id="notice"><%= notice %></p>
+<p id="notice"><%= notice %></p>	
 
-<%= javascript_include_tag "jquery.masonry.min" %>
-<div id="container" class="centered">
-<% 10.times do%>
-  <div class="box col2">aaa</div>
-  <div class="box col2">aaa</div>
-  <div class="box col2">aaa</div>
-  <div class="box col4">aaa</div>
-  <div class="box col4">aaa</div>
-  <div class="box col4">aaa</div>
-<% end%>
+<% 3.times do %>
+<div class="header">
+	あああ
 </div>
 
+<div class="header2">
+	いいい
+</div>
+
+<div class="header3">
+	ううう
+</div>
+
+<% end %>
+
+<div id="footer">
 <%= @text_map.text %><br>
 
 <%= link_to 'Edit', edit_text_map_path(@text_map) %> |
 <%= link_to 'Back', text_maps_path %>
+</div>
