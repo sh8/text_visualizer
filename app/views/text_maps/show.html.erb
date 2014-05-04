@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<%= @text_map.text %><br>
+<% for @text_map.text.split("\n").count %><br>
 
 <%= link_to 'Edit', edit_text_map_path(@text_map) %> |
 <%= link_to 'Back', text_maps_path %>
