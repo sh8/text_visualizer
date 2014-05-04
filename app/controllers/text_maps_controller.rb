@@ -5,11 +5,13 @@ class TextMapsController < ApplicationController
   # GET /text_maps.json
   def index
     @text_maps = TextMap.all
+    @text_map = TextMap.new
   end
 
   # GET /text_maps/1
   # GET /text_maps/1.json
   def show
+    @text_map = TextMap.find(params[:id])
   end
 
   # GET /text_maps/new
@@ -69,6 +71,6 @@ class TextMapsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def text_map_params
-      params[:text_map]
+      params[:text_map].permit(:text)
     end
 end
