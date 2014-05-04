@@ -71,6 +71,6 @@ class TextMapsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def text_map_params
-      params[:text_map].permit(:text)
+      params.require(:text_map).permit(:text)
     end
 end
