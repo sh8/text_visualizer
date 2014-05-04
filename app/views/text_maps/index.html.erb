@@ -1,0 +1,25 @@
+<h1>Listing text_maps</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @text_maps.each do |text_map| %>
+      <tr>
+        <td><%= link_to 'Show', text_map %></td>
+        <td><%= link_to 'Edit', edit_text_map_path(text_map) %></td>
+        <td><%= link_to 'Destroy', text_map, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Text map', new_text_map_path %>
