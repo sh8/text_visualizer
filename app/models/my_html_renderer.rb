@@ -3,8 +3,31 @@ class MyHTMLRenderer < Redcarpet::Render::HTML
 
 
   	if header_level == 1 
-  		"<div><h#{header_level}>#{text}</h#{header_level}>"
+  		s = "<div><h#{header_level}>#{text}</h#{header_level}>"
+  		h_used = true
+  		return s
   		#h_used = true
+  	end
+
+  	if header_level == 2
+  		s = "<h#{header_level}>#{text}</h#{header_level}>"
+  		return s
+  	end
+
+  	if header_level == 3
+  		s = "<h#{header_level}>#{text}</h#{header_level}>"
+  		return s
+  	end
+
+  	if header_level == 4
+  		s = "<h#{header_level}>#{text}</h#{header_level}>"
+  		return s
+  	end
+
+  	if h_used == true
+  		s = "</div>"
+  		h_used = false
+  		return s
   	end
 
   	
