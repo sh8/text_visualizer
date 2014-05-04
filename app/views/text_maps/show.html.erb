@@ -1,6 +1,10 @@
 <p id="notice"><%= notice %></p>
 
-<% for @text_map.text.split("\n").count %><br>
+<% @text_map.text.split("\n").each_with_index do |i, index| %>
+	<% @text = @text_map.text.split("\n") %>
+	<%= @text[index] %><br><br>
+
+<% end %>
 
 <%= link_to 'Edit', edit_text_map_path(@text_map) %> |
 <%= link_to 'Back', text_maps_path %>
