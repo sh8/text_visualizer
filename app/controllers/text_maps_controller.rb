@@ -21,6 +21,7 @@ class TextMapsController < ApplicationController
 
   # GET /text_maps/1/edit
   def edit
+    @text_map = TextMap.find(params[:id])
   end
 
   # POST /text_maps
