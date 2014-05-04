@@ -12,13 +12,14 @@
 
 require 'redcarpet'
 
-
 class TextMap < ActiveRecord::Base
 
 
 
 	def format_text
-		renderer = Redcarpet::Render::HTML.new(render_options = {})
+
+
+		renderer = MyHTMLRenderer.new(render_options = {})
 		markdown = Redcarpet::Markdown.new(renderer, extensions = {})
 
 		base_string = self.text
