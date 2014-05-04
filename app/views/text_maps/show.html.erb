@@ -1,6 +1,14 @@
 
 <p id="notice"><%= notice %></p>	
-
+<%= javascript_include_tag "masonry.pkgd.min" %>
+<script>
+  $(function(){
+    $('#container').masonry({
+      itemSelector: '.box',
+      columnWidth: 200 //一列の幅サイズを指定
+    });
+  });
+</script>
 <%= @text_map.format_text.html_safe %><br>
 </div>
 <div id="footer">
