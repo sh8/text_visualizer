@@ -1,8 +1,9 @@
 <h1>Text Visualizer</h1>
 
 <body>
-  <%= form_for @text_map do |t| %>
-    <%= f.text_area : %>
+  <%= form_for @text_map do |f| %>
+    <%= f.text_area :text, :class=>"text-area"%><br><br>
+    <%= f.submit %>
   <% end %>
 </body>
 
@@ -29,5 +30,3 @@
 </table>
 
 <br>
-
-<%= link_to 'New Text map', new_text_map_path %>
