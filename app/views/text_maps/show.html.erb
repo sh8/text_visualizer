@@ -1,10 +1,30 @@
+<script>
+  $(function(){
+    $('#container').masonry({
+      itemSelector: '.box',
+      columnWidth: 200 //一列の幅サイズを指定
+    });
+  });
+</script>
+
 <p id="notice"><%= notice %></p>
 
-<% @text_map.text.split("\n").each_with_index do |i, index| %>
-	<% @text = @text_map.text.split("\n") %>
-	<%= @text[index] %><br><br>
 
-<% end %>
+<%= @text_map.format_text.html_safe %>
+
+<%= javascript_include_tag "jquery.masonry.min" %>
+<div id="container" class="centered">
+<% 10.times do%>
+  <div class="box col2">aaa</div>
+  <div class="box col2">bbb</div>
+  <div class="box col2">ccc</div>
+  <div class="box col4">ddd</div>
+  <div class="box col4">eee</div>
+  <div class="box col4">fff</div>
+<% end%>
+</div>
+
+
 
 <%= link_to 'Edit', edit_text_map_path(@text_map) %> |
 <%= link_to 'Back', text_maps_path %>
