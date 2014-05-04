@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 20140504012404) do
   create_table "text_maps", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "text"
   end
 
 end
