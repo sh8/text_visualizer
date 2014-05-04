@@ -1,12 +1,13 @@
 class MyHTMLRenderer < Redcarpet::Render::HTML
+	
+
   def header(text, header_level, options)
-
-
-  	if header_level == 1 
-  		s = "<div><h#{header_level}>#{text}</h#{header_level}>"
-  		h_used = true
-  		return s
-  		#h_used = true
+  	@h_used = true
+  	if header_level == 1
+  		if @h_used == true
+  			s = "</div><div><h#{header_level}>#{text}</h#{header_level}>"
+  			return s
+  		end
   	end
 
   	if header_level == 2
@@ -24,11 +25,11 @@ class MyHTMLRenderer < Redcarpet::Render::HTML
   		return s
   	end
 
-  	if h_used == true
-  		s = "</div>"
-  		h_used = false
-  		return s
-  	end
+  	# if h_used == true
+  	# 	s = "</div>"
+  	# 	h_used = false
+  	# 	return s
+  	# end
 
   	
   end
