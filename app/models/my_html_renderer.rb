@@ -5,22 +5,23 @@ class MyHTMLRenderer < Redcarpet::Render::HTML
     	if header_level == 1 
         if @count == nil
           @count = true
-          s = "<div><h#{header_level}>#{text}</h#{header_level}>"
+          s = "<div class='item'><h#{header_level}>#{text}</h#{header_level}>"
           return s
         end
         
-    		s = "</div>\n<div><h#{header_level}>#{text}</h#{header_level}>"
+    		s = "</div>\n<div class='item'><h#{header_level}>#{text}</h#{header_level}>"
           
         return s
     	end
 
     	if header_level == 2
-    		s = "<h#{header_level}>#{text}</h#{header_level}>"
-    		return s
+        
+  		  s = "<div class='item2'><h#{header_level}>#{text}</h#{header_level}></div>"
+  		  return s
     	end
 
     	if header_level == 3
-    		s = "<h#{header_level}>#{text}</h#{header_level}>"
+    		s = "<div class='item3'><h#{header_level}>#{text}</h#{header_level}></div>"
     		return s
     	end
 
@@ -29,6 +30,10 @@ class MyHTMLRenderer < Redcarpet::Render::HTML
     		return s
     	end
 
+  end
+
+  def list(contents, list_type)
+    "<div class='item4'>#{contents}</div>"
   end
 
 
