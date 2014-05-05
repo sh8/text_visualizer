@@ -36,7 +36,7 @@ class MyHTMLRenderer < Redcarpet::Render::HTML
       end
   end
 
- 
+  
   
   def list(contents, list_type)
     case list_type
@@ -46,5 +46,17 @@ class MyHTMLRenderer < Redcarpet::Render::HTML
          "<div class='h2item h3bracket'><p>\n\n#{contents}</p></div>\n"
        end
   end
+
+
+  
+def image(link, title, alt_text)
+  # "<img src='http://#{title}.jpg.to'>"
+  if link == nil
+    "#{alt_text} <p><img src='http://#{alt_text}.jpg.to' style='width:95%;'></p>"
+  end
+end
+
+
+
 
 end
