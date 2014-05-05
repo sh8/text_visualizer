@@ -1,14 +1,13 @@
 <body>
 
-  <h1 id="welcome">Bullet Pallette<i class="fa fa-flag-checkered"></i></h1>
+  <h1 id="welcome">Bullet Pallette <i class="fa fa-flag-checkered"></i></h1>
   <%= form_for @text_map do |f| %>
     <%= f.text_area :text, :class=>"text-area", :placeholder => "Enter text here..."%><br><br>
-    <%= f.submit %>
+    <%= f.submit "Posterize", :class => "submitButton"%>
   <% end %>
 </body>
 
-
-
+<!-- 
 <table>
   <thead>
     <tr>
@@ -27,6 +26,6 @@
       </tr>
     <% end %>
   </tbody>
-</table>
+</table> -->
 
 <br>
