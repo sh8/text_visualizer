@@ -24,11 +24,12 @@ class MyHTMLRenderer < Redcarpet::Render::HTML
 
         s = "<!-- closes h1 --></div>\n<div class='h1bracket'><div class='h1item h1box'><h#{header_level}>#{text}</h#{header_level}></div>"
         return s
+
       end
 
       if header_level == 2
         if @h2_is_open == nil
-          @h2_is_open = true
+          @h2_is_open = true  
           s = "<div class='h2bracket'><div class='h2item h2box'><h#{header_level}>#{text}</h#{header_level}></div>"
           return s
         end
@@ -38,7 +39,6 @@ class MyHTMLRenderer < Redcarpet::Render::HTML
 
         return s
       end
-
       if header_level == 3
         s = "<div class='h3bracket'><div class='h3item h3box'><h#{header_level}>#{text}</h#{header_level}></div></div>"
         return s
