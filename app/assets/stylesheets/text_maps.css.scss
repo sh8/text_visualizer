@@ -3,9 +3,10 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
-	 background-color: #D8F6CE;
+	 //background-color: #D8F6CE;
  }
 
+<<<<<<< HEAD
  .container{
 	 float: left;
 	 margin:auto;
@@ -16,9 +17,65 @@ body {
 	 margin-left: 300px;
  }
 #footer {
-	position: absolute;
-	bottom: 40px;
-	width: 100%;
+=======
+
+// この指定は必要あるのでしょうか。yu
+// #footer {
+// 	position: absolute;
+// 	bottom: 40px;
+// 	width: 100%;
 	
+// }
+
+.text-area {
+ 	height: 500px;
+ 	width: 500px;
+ }
+
+ body {
+ 	width: 2000px;
+ }
+
+
+.item {
+	//position: absolute;
+	overflow: scroll;
+	width: 30%; 
+	background-color: #D8F6CE;
+	float: left;
+	margin: 5px;
+	padding: 5px;
+}
+.item2 {
+	//position: absolute;
+	width: 45%; 
+	background-color: #D8AAAA;
+	float: left;
+	margin: 5px;
+	padding: 5px;
+}
+.item3 {
+>>>>>>> c2513b37586f40260436d12bd7213852a5e8d11d
+	position: absolute;
+	width: 45%; 
+	background-color: #AAAAD8;
+	float: left;
+	margin: 5px;
+	padding: 5px;
+	display: inline-block;
+	vertical-align: top;
+}
+.item4 {
+	width: 70%; 
+	background-color: #EEEEAA;
+	float: left;
+	margin: 10px;
+	padding: 10px;
 }
 
+<<<<<<< HEAD
+=======
+.item.w2 { 
+	width: 50%; 
+}
+>>>>>>> c2513b37586f40260436d12bd7213852a5e8d11d
