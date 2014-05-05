@@ -20,30 +20,39 @@ body {
  	width: 500px;
  }
 
+ body {
+ 	width: 2000px;
+ }
 
-.item { 
+
+.item {
+	position: relative;
+	overflow: scroll;
 	width: 30%; 
 	background-color: #D8F6CE;
 	float: left;
-	margin: 10px;
-	padding: 10px;
+	margin: 5px;
+	padding: 5px;
 }
 .item2 {
+	position: relative;
 	width: 45%; 
 	background-color: #D8AAAA;
 	float: left;
-	margin: 10px;
-	padding: 10px;
+	margin: 5px;
+	padding: 5px;
 }
 .item3 {
-	width: 35%; 
+	width: 45%; 
 	background-color: #AAAAD8;
 	float: left;
-	margin: 10px;
-	padding: 10px;
+	margin: 5px;
+	padding: 5px;
+	display: inline-block;
+	vertical-align: top;
 }
 .item4 {
-	width: 30%; 
+	width: 70%; 
 	background-color: #EEEEAA;
 	float: left;
 	margin: 10px;
