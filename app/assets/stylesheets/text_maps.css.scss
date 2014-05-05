@@ -19,64 +19,18 @@ body {
  	width: 500px;
  }
 
- body {
- 	width: 2000px;
- }
-
-
-.item {
-	//position: absolute;
-	overflow: scroll;
-	width: 30%; 
-	background-color: #D8F6CE;
-	float: left;
-	margin: 5px;
-	padding: 5px;
-}
-.item2 {
-	//position: absolute;
-	width: 45%; 
-	background-color: #D8AAAA;
-	float: left;
-	margin: 5px;
-	padding: 5px;
-}
-.item3 {
->>>>>>> c2513b37586f40260436d12bd7213852a5e8d11d
-	position: absolute;
-	width: 45%; 
-	background-color: #AAAAD8;
-	float: left;
-	margin: 5px;
-	padding: 5px;
-	display: inline-block;
-	vertical-align: top;
-}
-.item4 {
-	width: 70%; 
-	background-color: #EEEEAA;
-	float: left;
-	margin: 10px;
-	padding: 10px;
-}
-
-
-.item.w2 { 
-	width: 50%; 
-}
-
 .container {
 	background-color: #FCCE07;
 	display:inline-block;
-	padding:10px;
+	//padding:10px;
+	text-align:center;
 }
 
 .h1bracket {
 	display:inline-block;
 	background-color: #FB9D17;
-	padding:10px;
+	//padding:10px;
 	width:90%;
-	margin: auto;
 	margin-bottom:5px;
 
 }
@@ -89,12 +43,15 @@ body {
 .h2bracket {
 	display:inline-block;
 	background-color: #FB642D;
-	padding:10px;
+	//padding:10px;
 	margin-bottom:5px;
 	max-width: 300px;
 }
 
 .h1item, .h2item, .h3item, .h4item {
+	&.bullets {
+		text-align:left;
+	}
 }
 
 .h2box {
@@ -104,7 +61,7 @@ body {
 .h3bracket {
 	display:inline-block;
 	background-color: #FC3B3C;	
-	padding:10px;
+	//padding:10px;
 	margin-bottom:5px;
 	max-width:200px;
 }
@@ -136,15 +93,23 @@ body {
 h1 {
 	font-family: "trackregular";
     border-bottom: 3px solid #11A7FC;
-    display:inline-block
+    display:inline-block;
+    font-size:70px;
+    line-height:120%;
 }
 
 h2 {
 	font-family: "trackregular";
+	margin:0px;
+	font-size:50px;
+	line-height:110%;
 }
 
 h3 {
 	font-family: "trackregular";
+	margin:0px;
+	font-size:30px;
+	line-height:110%;
 }
 
 h4 {
