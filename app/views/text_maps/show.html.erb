@@ -1,6 +1,5 @@
-<%= javascript_include_tag "masonry.pkgd.min" %>
-
 <script>
+
 /*$(function(){
   $('#container').masonry({
   itemSelector: '.bracket',
@@ -66,6 +65,7 @@ $(document).ready(function(){
   	itemSelector: '.h3bracket',
   	"stamp": ".h2box"
   });
+
 });
 
 // $(function(){
@@ -75,6 +75,8 @@ $(document).ready(function(){
 // });
 
 </script>
+
+<%= javascript_include_tag "masonry.pkgd.min.js" %>
 <!-- 
 
 <div class="container">
@@ -131,43 +133,20 @@ $(document).ready(function(){
 
 </div> -->
 
-
-<!-- <div id="container">
-	<div class="h1group">
-
-		<h1>Title</h1>
-
-		<div class="h2group">
-			<h2>Topic</h2>
-		</div>
-
-		<div class="h2group">
-			<h2>Topic</h2>
-			
-			<div class="h3group">
-				<h3>Subtopic</h3>
-			</div>
-
-			<div class="h3group">
-				<h3>Subtopic</h3>
-				<h4>something</h4>
-				<h4>something</h4>
-			</div>
-		</div>
-
-	</div>
-</div>
- -->
-
 <div class="container">
 <%= @text_map.format_text.html_safe %><br>
 </div>
 </div>
 </div>
 
-<div id="footer">
+<!-- <div id="footer">
 <%= link_to 'Edit', edit_text_map_path(@text_map) %> |
 <%= link_to 'Back', text_maps_path %>
+</div>
+ -->
+
+<div id="footer">
+	<p> Bullet Palette generates your notes into a beautiful online poster. Click <%= link_to 'here', root_path %> to make another one, or click <%= link_to "here", edit_text_map_path %> to edit this one. </p>
 </div>
 
 <script>

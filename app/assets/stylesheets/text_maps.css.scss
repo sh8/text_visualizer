@@ -3,133 +3,71 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
-	 //background-color: #D8F6CE;
+	 ////background-color: #D8F6CE;
 	 margin: 0;
 	 padding: 0;
+	 text-align: center;
+}
+
+ textarea { 
+ 	border: none;
+ 	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	-webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    outline: none;
  }
 
-
-// この指定は必要あるのでしょうか。yu
-// #footer {
-// 	position: absolute;
-// 	bottom: 40px;
-// 	width: 100%;
-	
-// }			
-
-.text-area {
- 	height: 500px;
- 	width: 500px;
- }
-
- // body {
- // 	width: 2000px;
- // }
-
-
-.item {
-	//position: absolute;
-	overflow: scroll;
-	width: 30%; 
-	background-color: #D8F6CE;
-	float: left;
-	margin: 5px;
-	padding: 5px;
-}
-.item2 {
-	//position: absolute;
-	width: 45%; 
-	background-color: #D8AAAA;
-	float: left;
-	margin: 5px;
-	padding: 5px;
-}
-.item3 {
-
-	position: absolute;
-	width: 45%; 
-	// background-color: #AAAAD8;
-	float: left;
-	margin: 5px;
-	padding: 5px;
-	display: inline-block;
-	vertical-align: top;
-}
-.item4 {
-	width: 70%; 
-	// background-color: #EEEEAA;
-	float: left;
-	margin: 10px;
-	padding: 10px;
-}
-
-
-.item.w2 { 
-	width: 50%; 
-}
-
-.container {
-	background-color: #FCCE07;
+.submitButton {
+	//background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #000000), color-stop(1, #000000) );
+	//background:-moz-linear-gradient( center top, #000000 5%, #000000 100% );
+	//filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000');
+	background-color:#000000;
+	-webkit-border-top-left-radius:6px;
+	-moz-border-radius-topleft:6px;
+	border-top-left-radius:6px;
+	-webkit-border-top-right-radius:6px;
+	-moz-border-radius-topright:6px;
+	border-top-right-radius:6px;
+	-webkit-border-bottom-right-radius:6px;
+	-moz-border-radius-bottomright:6px;
+	border-bottom-right-radius:6px;
+	-webkit-border-bottom-left-radius:6px;
+	-moz-border-radius-bottomleft:6px;
+	border-bottom-left-radius:6px;
+	border:0px solid #000000;
 	display:inline-block;
-	//padding:10px;
-	width: 100%;
-	margin: 0;
-}
 
-.h1bracket {
-	display:inline-block;
-	// background-color: #FB9D17;
-	padding:5px;
-	width:100%;
-	margin: auto;
-	margin-bottom:10px;
-	
-}
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
 
-.h1box {
-	//background-color: #FB642D;
+	height:50px;
+	line-height:50px;
+	width:100px;
+	text-decoration:none;
 	text-align:center;
-
+	color:#ffffff;
 }
 
-.h2bracket {
-	display:inline-block;
-	// background-color: #FB642D;
-	padding:10px;
-	margin-bottom:5px;
-	width: 30%;
-	margin: 0 5px;
+
+.submitButton:hover {
+	//background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #2267F2), color-stop(1, #ffffff) );
+	//background:-moz-linear-gradient( center top, #2267F2 5%, #2267F2 100% );
+	//filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#2267F2', endColorstr='#2267F2');
+	transition: background .25s ease-in-out;
+   -moz-transition: background .25s ease-in-out;
+   -webkit-transition: background .25s ease-in-out;
+	background-color:#2267F2;
+	border-color: #2267F2;
+	color:#ffffff;
+	cursor:pointer;
 }
 
-.h1item, .h2item, .h3item, .h4item {
-}
 
-.h2box {
-	text-align:center;
-}
-
-.h3bracket {
-	display:inline-block;
-	// background-color: #FC3B3C;	
-	padding:10px;
-	margin-bottom:5px;
-	width: 40%;
-	margin: 5px;
-}
-
-.h3box {
-	text-align:center;
-}
-
-.h4box {
-	// background-color: #F41058;	
-}
-
-/*======================================*/
-/*TEXT FORMATTING STYLES*/
-/*======================================*/
-
-@font-face {
+ @font-face {
     font-family: 'trackregular';
     src: url('track-webfont.eot');
     src: url('track-webfont.eot?#iefix') format('embedded-opentype'),
@@ -141,18 +79,128 @@ body {
 }
 
 
+@font-face {
+    font-family: 'odin_roundedlight';
+    src: url('odin_rounded_-_light-webfont.eot');
+    src: url('odin_rounded_-_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('odin_rounded_-_light-webfont.woff') format('woff'),
+         url('odin_rounded_-_light-webfont.ttf') format('truetype'),
+         url('odin_rounded_-_light-webfont.svg#odin_roundedlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.text-area {
+ 	height: 500px;
+ 	width: 500px;
+ }
+ 
+.container {
+	//background-color: #FCCE07;
+	display:inline-block;
+	//padding:10px;
+	text-align:center;
+	width: 99%;
+	margin: 0;
+}
+
+.h1bracket {
+	display:inline-block;
+
+	padding:5px;
+	width:100%;
+	margin: auto;
+	margin-bottom:10px !important;
+	
+}
+
+.h1box {
+	////background-color: #FB642D;
+	text-align:center;
+
+}
+
+.h2bracket {
+	display:inline-block;
+
+	//background-color: #FB642D;
+	//padding:10px;
+	margin-bottom:30px !important;
+
+	padding:10px;
+	width: 30%;
+	margin: 0 5px;
+}
+
+.h1item, .h2item, .h3item, .h4item {
+	&.bullets {
+		text-align:left;
+	}
+}
+
+.h2box {
+	text-align:center;
+}
+
+.h3bracket {
+	display:inline-block;
+
+	padding:10px;
+	margin-bottom:5px;
+	width: 40%;
+	margin: 5px;
+	margin-bottom:12px !important;
+}
+
+.h3box {
+	text-align:center;
+}
+
+.h4box {
+
+}
+
+li {
+	text-align: left;
+}
+
+#footer {
+	background-color:#94D9D1;
+	width:100%;
+	padding: 20px;
+	text-align:center;
+	height:30px;
+	color: #FFFFFF !important;
+}
+
+
+/*======================================*/
+/*TEXT FORMATTING STYLES*/
+/*======================================*/
+
+
 h1 {
 	font-family: "trackregular";
-    border-bottom: 3px solid #11A7FC;
-    display:inline-block
+    border-bottom: 7px solid #30B4E2;
+    display:inline-block;
+    font-size:70px;
+    line-height:120%;
 }
 
 h2 {
 	font-family: "trackregular";
+	margin:0px;
+	font-size:30px;
+	line-height:110%;
 }
 
 h3 {
-	font-family: "trackregular";
+//    font-family: "odin_roundedregular";
+    font-family: 'odin_roundedlight';
+	margin: 0px;
+	font-size: 25px;
+	line-height:130%;
 }
 
 h4 {
@@ -167,6 +215,16 @@ p {
 .h3bracket img {
 	margin-bottom: 40px;
 }
+
+#welcome {
+	border: none;
+}
+
+.h1item img {
+	width: 20% !important;
+	float: right;
+}
+
 /*
 "container"
 	"h1bracket"
