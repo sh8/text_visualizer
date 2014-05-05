@@ -48,13 +48,30 @@ $(function(){
 });
 */
 
-$(function(){
-  $('.h1bracket').masonry({
-  itemSelector: '.h1item',
+$(document).ready(function(){
+	$('.container').masonry({
+		containerStyle: 'absolute',
+  	itemSelector: '.h1bracket'
   });
-  columnWidth: 240,
-  containerStyle:null;
+
+	$('.h1bracket').masonry({
+		containerStyle: 'absolute',
+  	itemSelector: '.h2bracket',
+  	"stamp": ".h1box"
+  });
+
+  $('.h2bracket').masonry({
+		containerStyle: 'absolute',
+  	itemSelector: '.h3bracket',
+  	"stamp": ".h2box"
+  });
 });
+
+// $(function(){
+  
+//   columnWidth: 240,
+//   containerStyle:null;
+// });
 
 </script>
 

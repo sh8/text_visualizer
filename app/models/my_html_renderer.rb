@@ -34,12 +34,9 @@ class MyHTMLRenderer < Redcarpet::Render::HTML
         s = "<div class='box column2'><h#{header_level}>#{text}</h#{header_level}></div>"
         return s
       end
-
   end
 
-  def new_div(text)
-    
-  end
+ 
   
   def list(contents, list_type)
     case list_type
@@ -49,8 +46,5 @@ class MyHTMLRenderer < Redcarpet::Render::HTML
          "<div class='h2item h3bracket'><p>\n\n#{contents}</p></div>\n"
        end
   end
-end
-
-def doc_footer()
 
 end

@@ -14,3 +14,10 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+var container = document.querySelector('.container');
+var msnry = new Masonry( container, {
+  // options
+  columnWidth: 200,
+  itemSelector: '.box'
+});
