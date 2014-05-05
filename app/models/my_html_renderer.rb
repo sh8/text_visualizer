@@ -37,9 +37,9 @@ class MyHTMLRenderer < Redcarpet::Render::HTML
   def list(contents, list_type)
     case list_type
        when :ordered
-         "<div class='box column2'>\n\n.nr step 0 1\n#{contents}\n</div>"
+         "<div class='box column4'>\n\n.nr step 0 1\n#{contents}\n</div>"
        when :unordered
-         "\n<div class='box column2'>\n#{contents}\n</div>"
+         "<div class='box column4'>#{contents}</div>"
        end
   end
 end
