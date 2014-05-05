@@ -3,15 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
-<<<<<<< HEAD
-	 background-color: #D8F6CE;
-	 text-align:center;
-=======
-	 //background-color: #D8F6CE;
-	 margin: 0;
-	 padding: 0;
->>>>>>> dedd066efa825b16355d929bb3ab50e96e5e9105
- }
+	 text-align: center;
+}
 
 
 // この指定は必要あるのでしょうか。yu
@@ -26,59 +19,7 @@ body {
  	height: 500px;
  	width: 500px;
  }
-
-<<<<<<< HEAD
-=======
- // body {
- // 	width: 2000px;
- // }
-
->>>>>>> dedd066efa825b16355d929bb3ab50e96e5e9105
-
-.item {
-	//position: absolute;
-	overflow: scroll;
-	width: 30%; 
-	background-color: #D8F6CE;
-	float: left;
-	margin: 5px;
-	padding: 5px;
-}
-.item2 {
-	//position: absolute;
-	width: 45%; 
-	background-color: #D8AAAA;
-	float: left;
-	margin: 5px;
-	padding: 5px;
-}
-.item3 {
-<<<<<<< HEAD
-=======
-
->>>>>>> dedd066efa825b16355d929bb3ab50e96e5e9105
-	position: absolute;
-	width: 45%; 
-	background-color: #AAAAD8;
-	float: left;
-	margin: 5px;
-	padding: 5px;
-	display: inline-block;
-	vertical-align: top;
-}
-.item4 {
-	width: 70%; 
-	background-color: #EEEEAA;
-	float: left;
-	margin: 10px;
-	padding: 10px;
-}
-
-
-.item.w2 { 
-	width: 50%; 
-}
-
+ 
 .container {
 	background-color: #FCCE07;
 	display:inline-block;
