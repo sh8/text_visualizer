@@ -1,8 +1,8 @@
-<h1>Text Visualizer</h1>
-
 <body>
+
+  <h1 id="welcome">Bullet Pallette<i class="fa fa-flag-checkered"></i></h1>
   <%= form_for @text_map do |f| %>
-    <%= f.text_area :text, :class=>"text-area"%><br><br>
+    <%= f.text_area :text, :class=>"text-area", :placeholder => "Enter text here..."%><br><br>
     <%= f.submit %>
   <% end %>
 </body>

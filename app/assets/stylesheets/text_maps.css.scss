@@ -8,14 +8,38 @@ body {
 	 padding: 0;
  }
 
+ textarea { 
+ 	border: none;
+ 	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	-webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+ }
 
-// この指定は必要あるのでしょうか。yu
-// #footer {
-// 	position: absolute;
-// 	bottom: 40px;
-// 	width: 100%;
-	
-// }			
+ @font-face {
+    font-family: 'trackregular';
+    src: url('track-webfont.eot');
+    src: url('track-webfont.eot?#iefix') format('embedded-opentype'),
+         url('track-webfont.woff') format('woff'),
+         url('track-webfont.ttf') format('truetype'),
+         url('track-webfont.svg#trackregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'odin_roundedlight';
+    src: url('odin_rounded_-_light-webfont.eot');
+    src: url('odin_rounded_-_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('odin_rounded_-_light-webfont.woff') format('woff'),
+         url('odin_rounded_-_light-webfont.ttf') format('truetype'),
+         url('odin_rounded_-_light-webfont.svg#odin_roundedlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 .text-area {
  	height: 500px;
@@ -27,7 +51,7 @@ body {
 	display:inline-block;
 	//padding:10px;
 	text-align:center;
-	width: 100%;
+	width: 99%;
 	margin: 0;
 }
 
@@ -54,9 +78,8 @@ body {
 	display:inline-block;
 	//background-color: #FB642D;
 	//padding:10px;
-	margin-bottom:10px !important;
+	margin-bottom:30px !important;
 	padding:10px;
-	margin-bottom:20px;
 	width: 30%;
 	margin: 0 5px;
 }
@@ -78,7 +101,7 @@ body {
 	margin-bottom:5px;
 	width: 40%;
 	margin: 5px;
-	margin-bottom:10px !important;
+	margin-bottom:12px !important;
 }
 
 .h3box {
@@ -89,25 +112,25 @@ body {
 	//background-color: #F41058;	
 }
 
+#footer {
+	background-color:#94D9D1;
+	width:100%;
+	padding: 20px;
+	text-align:center;
+	height:30px;
+	position:absolute;
+	bottom: 0;
+	color: #FFFFFF !important;
+}
+
 /*======================================*/
 /*TEXT FORMATTING STYLES*/
 /*======================================*/
 
-@font-face {
-    font-family: 'trackregular';
-    src: url('track-webfont.eot');
-    src: url('track-webfont.eot?#iefix') format('embedded-opentype'),
-         url('track-webfont.woff') format('woff'),
-         url('track-webfont.ttf') format('truetype'),
-         url('track-webfont.svg#trackregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
 
 h1 {
 	font-family: "trackregular";
-    border-bottom: 7px solid #31BBF7;
+    border-bottom: 7px solid #30B4E2;
     display:inline-block;
     font-size:70px;
     line-height:120%;
@@ -121,10 +144,11 @@ h2 {
 }
 
 h3 {
-	font-family: "trackregular";
-	margin:0px;
-	font-size:20px;
-	line-height:110%;
+//    font-family: "odin_roundedregular";
+    font-family: 'odin_roundedlight';
+	margin: 0px;
+	font-size: 25px;
+	line-height:130%;
 }
 
 h4 {
@@ -133,6 +157,10 @@ h4 {
 
 p {
 	font-family: 'Roboto', sans-serif;
+}
+
+#welcome {
+
 }
 
 /*

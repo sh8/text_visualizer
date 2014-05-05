@@ -1,6 +1,6 @@
 class MyHTMLRenderer < Redcarpet::Render::HTML
   def header(text, header_level, options)
-    
+
 
       if header_level == 1 
         if @h1_is_open == nil
@@ -62,8 +62,6 @@ class MyHTMLRenderer < Redcarpet::Render::HTML
 
   end
 
- 
-  
   def list(contents, list_type)
     case list_type
        when :ordered
@@ -72,5 +70,15 @@ class MyHTMLRenderer < Redcarpet::Render::HTML
          "<div class='h2item h3bracket'><p>\n\n#{contents}</p></div>\n"
        end
   end
+
+
+  def image(link, alt_text, title)
+    "<img src='#{link}' alt='#{alt_text}' style='width: 40%;'/>"
+  end
+
+  def double_emphasis(text)
+    "<strong style='background-color: #FFFA55;'>#{text}</strong>"
+  end
+
 
 end
