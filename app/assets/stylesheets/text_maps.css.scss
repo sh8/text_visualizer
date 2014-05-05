@@ -6,26 +6,13 @@ body {
 	 //background-color: #D8F6CE;
  }
 
-<<<<<<< HEAD
- .container{
-	 float: left;
-	 margin:auto;
-	 margin-left: 50px;
- }
- 
- .contaner:nth-of-type(1){
-	 margin-left: 300px;
- }
-#footer {
-=======
-
 // この指定は必要あるのでしょうか。yu
 // #footer {
 // 	position: absolute;
 // 	bottom: 40px;
 // 	width: 100%;
 	
-// }
+// }			
 
 .text-area {
  	height: 500px;
@@ -73,9 +60,108 @@ body {
 	padding: 10px;
 }
 
-<<<<<<< HEAD
-=======
+
 .item.w2 { 
 	width: 50%; 
 }
->>>>>>> c2513b37586f40260436d12bd7213852a5e8d11d
+
+.container {
+	background-color: #FCCE07;
+	display:inline-block;
+	padding:10px;
+}
+
+.h1bracket {
+	display:inline-block;
+	background-color: #FB9D17;
+	padding:10px;
+	width:90%;
+	margin: auto;
+	margin-bottom:5px;
+
+}
+
+.h1box {
+	//background-color: #FB642D;
+	text-align:center;
+}
+
+.h2bracket {
+	display:inline-block;
+	background-color: #FB642D;
+	padding:10px;
+	margin-bottom:5px;
+	max-width: 300px;
+}
+
+.h1item, .h2item, .h3item, .h4item {
+}
+
+.h2box {
+	text-align:center;
+}
+
+.h3bracket {
+	display:inline-block;
+	background-color: #FC3B3C;	
+	padding:10px;
+	margin-bottom:5px;
+	max-width:200px;
+}
+
+.h3box {
+	text-align:center;
+}
+
+.h4box {
+	background-color: #F41058;	
+}
+
+/*======================================*/
+/*TEXT FORMATTING STYLES*/
+/*======================================*/
+
+@font-face {
+    font-family: 'trackregular';
+    src: url('track-webfont.eot');
+    src: url('track-webfont.eot?#iefix') format('embedded-opentype'),
+         url('track-webfont.woff') format('woff'),
+         url('track-webfont.ttf') format('truetype'),
+         url('track-webfont.svg#trackregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+h1 {
+	font-family: "trackregular";
+    border-bottom: 3px solid #11A7FC;
+    display:inline-block
+}
+
+h2 {
+	font-family: "trackregular";
+}
+
+h3 {
+	font-family: "trackregular";
+}
+
+h4 {
+	font-family: 'Roboto', sans-serif;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+}
+
+/*
+"container"
+	"h1bracket"
+		"h1box"
+		"h2bracket"
+			"h2box"
+			"h3bracket"
+				"h3box"
+				"h4box"*/
+
