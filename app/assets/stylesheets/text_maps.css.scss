@@ -26,7 +26,7 @@ body {
 
 
 .item {
-	position: relative;
+	//position: absolute;
 	overflow: scroll;
 	width: 30%; 
 	background-color: #D8F6CE;
@@ -35,7 +35,7 @@ body {
 	padding: 5px;
 }
 .item2 {
-	position: relative;
+	//position: absolute;
 	width: 45%; 
 	background-color: #D8AAAA;
 	float: left;
@@ -43,6 +43,7 @@ body {
 	padding: 5px;
 }
 .item3 {
+	position: absolute;
 	width: 45%; 
 	background-color: #AAAAD8;
 	float: left;
