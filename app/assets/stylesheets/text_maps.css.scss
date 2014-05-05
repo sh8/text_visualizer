@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
-	 //background-color: #D8F6CE;
+	 ////background-color: #D8F6CE;
 	 margin: 0;
 	 padding: 0;
  }
@@ -23,7 +23,7 @@ body {
  }
 
 .container {
-	background-color: #FCCE07;
+	//background-color: #FCCE07;
 	display:inline-block;
 	//padding:10px;
 	text-align:center;
@@ -33,7 +33,7 @@ body {
 
 .h1bracket {
 	display:inline-block;
-	background-color: #FB9D17;
+	//background-color: #FB9D17;
 	//padding:10px;
 	width:90%;
 	margin-bottom:5px;
@@ -45,18 +45,18 @@ body {
 }
 
 .h1box {
-	//background-color: #FB642D;
+	////background-color: #FB642D;
 	text-align:center;
 
 }
 
 .h2bracket {
 	display:inline-block;
-	background-color: #FB642D;
+	//background-color: #FB642D;
 	//padding:10px;
 	margin-bottom:10px !important;
 	padding:10px;
-	margin-bottom:5px;
+	margin-bottom:20px;
 	width: 30%;
 	margin: 0 5px;
 }
@@ -73,7 +73,7 @@ body {
 
 .h3bracket {
 	display:inline-block;
-	background-color: #FC3B3C;	
+	//background-color: #FC3B3C;	
 	padding:10px;
 	margin-bottom:5px;
 	width: 40%;
@@ -86,7 +86,7 @@ body {
 }
 
 .h4box {
-	background-color: #F41058;	
+	//background-color: #F41058;	
 }
 
 /*======================================*/
@@ -107,7 +107,7 @@ body {
 
 h1 {
 	font-family: "trackregular";
-    border-bottom: 3px solid #11A7FC;
+    border-bottom: 7px solid #31BBF7;
     display:inline-block;
     font-size:70px;
     line-height:120%;
