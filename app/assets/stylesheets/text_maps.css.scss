@@ -55,8 +55,10 @@ body {
 	background-color: #FB642D;
 	//padding:10px;
 	margin-bottom:10px !important;
-	min-width: 20%;
-	max-width:40%;
+	padding:10px;
+	margin-bottom:5px;
+	width: 30%;
+	margin: 0 5px;
 }
 
 .h1item, .h2item, .h3item, .h4item {
@@ -72,9 +74,11 @@ body {
 .h3bracket {
 	display:inline-block;
 	background-color: #FC3B3C;	
-	//padding:10px;
+	padding:10px;
+	margin-bottom:5px;
+	width: 40%;
+	margin: 5px;
 	margin-bottom:10px !important;
-	max-width:200px;
 }
 
 .h3box {
