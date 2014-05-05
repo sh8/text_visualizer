@@ -6,43 +6,56 @@ body {
 	 //background-color: #D8F6CE;
  }
 
+// <<<<<<< HEAD
 
-// この指定は必要あるのでしょうか。yu
-// #footer {
-// 	position: absolute;
-// 	bottom: 40px;
-// 	width: 100%;
+// //
+// // #footer {
+// // 	position: absolute;
+// // 	bottom: 40px;
+// // 	width: 100%;
 	
+// // }
+
+// .text-area {
+//  	height: 500px;
+//  	width: 500px;
+//  }
+
+//  body {
+//  	width: 2000px;
+//  }
+
+
+// .item {
+// 	//position: absolute;
+// 	overflow: scroll;
+// 	width: 30%; 
+// 	background-color: #D8F6CE;
+// 	float: left;
+// 	margin: 5px;
+// 	padding: 5px;
 // }
+// .item2 {
+// 	//position: absolute;
+// 	width: 45%; 
+// 	background-color: #D8AAAA;
+// 	float: left;
+// 	margin: 5px;
+// 	padding: 5px;
+// }
+// .item3 {
 
-.text-area {
- 	height: 500px;
- 	width: 500px;
+ .container {
+ 	width: 25%;
+	 float: left;
+	 margin:auto;
+	 margin-left: 50px;
  }
-
- body {
- 	width: 2000px;
+ 
+ .contaner:nth-of-type(1){
+	 margin-left: 300px;
  }
-
-
-.item {
-	//position: absolute;
-	overflow: scroll;
-	width: 30%; 
-	background-color: #D8F6CE;
-	float: left;
-	margin: 5px;
-	padding: 5px;
-}
-.item2 {
-	//position: absolute;
-	width: 45%; 
-	background-color: #D8AAAA;
-	float: left;
-	margin: 5px;
-	padding: 5px;
-}
-.item3 {
+#footer {
 	position: absolute;
 	width: 45%; 
 	background-color: #AAAAD8;
@@ -60,6 +73,13 @@ body {
 	padding: 10px;
 }
 
-.item.w2 { 
-	width: 50%; 
+.box {
+	width: 50%;
 }
+
+// <<<<<<< HEAD
+// .item.w2 { 
+// 	width: 50%; 
+// }
+// =======
+// >>>>>>> 92bb0e4a804f99e7b2926583084f15cd693ad378
