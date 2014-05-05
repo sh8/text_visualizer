@@ -40,7 +40,7 @@ body {
 	padding:5px;
 	width:100%;
 	margin: auto;
-	margin-bottom:10px;
+	margin-bottom:10px !important;
 	
 }
 
@@ -54,10 +54,9 @@ body {
 	display:inline-block;
 	background-color: #FB642D;
 	//padding:10px;
-	margin-bottom:5px;
-	max-width: 25%;
+	margin-bottom:10px !important;
 	min-width: 20%;
-	margin: 0 10px;
+	max-width:40%;
 }
 
 .h1item, .h2item, .h3item, .h4item {
@@ -74,9 +73,8 @@ body {
 	display:inline-block;
 	background-color: #FC3B3C;	
 	//padding:10px;
-	margin-bottom:5px;
+	margin-bottom:10px !important;
 	max-width:200px;
-	margin: 10px;
 }
 
 .h3box {
@@ -121,7 +119,7 @@ h2 {
 h3 {
 	font-family: "trackregular";
 	margin:0px;
-	font-size:30px;
+	font-size:20px;
 	line-height:110%;
 }
 
