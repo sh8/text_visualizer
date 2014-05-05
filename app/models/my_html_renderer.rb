@@ -45,10 +45,12 @@ class MyHTMLRenderer < Redcarpet::Render::HTML
         return s
       end
 
+
       if header_level == 4
         s = "<div class='box column2'><h#{header_level}>#{text}</h#{header_level}></div>"
         return s
       end
+<<<<<<< HEAD
 
       def open_brackets
         if nil
@@ -60,22 +62,23 @@ class MyHTMLRenderer < Redcarpet::Render::HTML
 
       end
 
+=======
+>>>>>>> dedd066efa825b16355d929bb3ab50e96e5e9105
   end
 
-  def new_div(text)
-    
-  end
+ 
   
   def list(contents, list_type)
     case list_type
        when :ordered
          "<div class='h2item  h3bracket bullets'><p>\n\n.nr step 0 1\n#{contents}\n</p></div>\n"
        when :unordered
+<<<<<<< HEAD
          "<div class='h2item h3bracket bullets'><p>\n.\n#{contents}</p></div>\n"
+=======
+         "<div class='h2item h3bracket'><p>\n\n#{contents}</p></div>\n"
+>>>>>>> dedd066efa825b16355d929bb3ab50e96e5e9105
        end
   end
-end
-
-def doc_footer()
 
 end

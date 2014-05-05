@@ -49,13 +49,35 @@ $(function(){
 });
 */
 
-$(function(){
-  $('.h1bracket').masonry({
-  itemSelector: '.h1item',
+$(document).ready(function(){
+	$('.container').masonry({
+		containerStyle: 'absolute',
+  	itemSelector: '.h1bracket'
   });
+
+	$('.h1bracket').masonry({
+		containerStyle: 'absolute',
+  	itemSelector: '.h2bracket',
+  	"stamp": ".h1box"
+  });
+
+  $('.h2bracket').masonry({
+		containerStyle: 'absolute',
+  	itemSelector: '.h3bracket',
+  	"stamp": ".h2box"
+  });
+<<<<<<< HEAD
   columnWidth: 240,
   containerStyle:null
+=======
+>>>>>>> dedd066efa825b16355d929bb3ab50e96e5e9105
 });
+
+// $(function(){
+  
+//   columnWidth: 240,
+//   containerStyle:null;
+// });
 
 </script>
 <!-- 
