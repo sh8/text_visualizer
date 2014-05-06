@@ -1,7 +1,5 @@
 <script>
 
-
-
 $(document).ready(function(){
 	$('.container').masonry({
 		containerStyle: 'absolute',
@@ -21,94 +19,17 @@ $(document).ready(function(){
   	itemSelector: '.h3bracket',
   	"stamp": ".h2box"
   });
-
-  //$container.masonry('reloadItems')
-
-
- //  var p = $( '.h2bracket' );
-	// var position = p.position();
-
- //  // var top = $('.h2bracket').top();
- //  position.top = position.top - 50;
- //  $('.h2bracket').attr("top", position.top);
 });
-
-// $(function(){
-  
-//   columnWidth: 240,
-//   containerStyle:null;
-// });
 
 </script>
 
 <%= javascript_include_tag "masonry.pkgd.min.js" %>
-<!-- 
-
-<div class="container">
-	<div class= "h1bracket">
-		<div class= "h1item h1box"><h1>TITLE</h1></div>
-
-		<div class= "h1item h2bracket">
-			<div class="h2item h2box"><h2>topic1</h2></div>
-			<div class="h2item h3bracket">
-				<div class="h3item h3box"><h3>i'll make this substop long too yay</h3></div>
-				<div class="h3item h3bracket"></div>
-			</div>
-		</div>
-
-		<div class= "h1item h2bracket">
-			<div class="h2item h2box"><h2>topic2</h2></div>
-			<div class="h2item h3bracket"><h3>i'll make this substop long too yay</h3></div>
-		</div>
-		<div class= "h1item h2bracket">
-			<div class="h2item h2box"><h2>topic3</h2></div>
-			<div class="h2item h3bracket"><h3>subtop</h3></div>
-			<div class="h2item h3bracket"><h3>subtop</h3></div>
-		</div>
-		<div class= "h1item h2bracket">
-			<div class="h2item h2box"><h2>topic3</h2></div>
-			<div class="h2item h3bracket">
-				<div class="h3item h3box"><h3>i'll make this substop long too yay</h3></div>
-				<div class="h3item h3bracket"></div>
-			</div>
-		</div>
-
-	</div>
-
-	<div class= "h1bracket">
-		<div class= "h1item h1box"><h1>TITLE</h1></div>
-		<div class= "h1item h2bracket">
-			<div class="h2item h2box"><h2>topic</h2></div>
-			<div class="h2item h3bracket"><h3>subtop</h3></div>
-		</div>
-	</div>
-
-	<div class= "h1bracket">
-		<div class= "h1item h1box"><h1>TITLE</h1></div>
-		<div class= "h1item h2bracket">
-			<div class="h2item h2box"><h2>topic</h2></div>
-		</div>
-	</div>
-
-	<div class= "h1bracket">
-		<div class= "h1item h1box"><h1>TITLE</h1>
-
-		</div>
-	</div>
-
-</div> -->
 
 <div class="container">
 <%= @text_map.format_text.html_safe %><br>
 </div>
 </div>
 </div>
-
-<!-- <div id="footer">
-<%= link_to 'Edit', edit_text_map_path(@text_map) %> |
-<%= link_to 'Back', text_maps_path %>
-</div>
- -->
 
 <div id="footer">
 	<p> Bullet Palette generates your notes into a beautiful online poster. Make <%= link_to 'New', root_path %> or Edit <%= link_to "this one", edit_text_map_path %>.</p>

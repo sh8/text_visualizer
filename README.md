@@ -1,4 +1,5 @@
-text_visualizer
+Bullet Pallette (Text Visuaizer)
 ===============
 
-The Best Text Visualizer in the World.
+Turning boring text into amazing visual posters!
+Just paste in any text, and with *one click*, you get an awesome visual poster!

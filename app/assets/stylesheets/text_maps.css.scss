@@ -170,7 +170,8 @@ li {
 #footer {
 	position: fixed;
 	bottom: 0;
-	background-color:#94D9D1;
+	background-color:#94E5D1;
+	opacity: 0.9;
 	width:100%;
 	padding: 0;
 	text-align:center;
@@ -183,7 +184,12 @@ li {
 	padding: 5px;
 }
 #footer a {
-	color: #EEE;
+	color: #FFA189;
+	text-decoration: none;
+}
+
+#footer a:hover {
+	color: #FFC589;
 }
 
 
