@@ -1,52 +1,6 @@
 <script>
 
-/*$(function(){
-  $('#container').masonry({
-  itemSelector: '.bracket',
-  columnWidth: 70,
-  });
-});
->>>>>>> 828f6afcefacd37efdff6873fadb204c0381e0f4
 
-
-$(function(){
-  $('.bracket').masonry({
-  itemSelector: '.item',
-  columnWidth: 70,
-  });
-});*/
-
-/*$(function(){
-  $('.h3bracket').masonry({
-  itemSelector: '.h3item',
-  });
-  columnWidth: 240,
-  containerStyle:null;
-});
-
-
-$(function(){
-  $('.h2bracket').masonry({
-  itemSelector: '.h2item',
-  });
-  columnWidth: 240
-});
-
-$(function(){
-  $('.h1bracket').masonry({
-  itemSelector: '.h2item',
-  });
-  columnWidth: 240
-});
-
-
-$(function(){
-  $('.container').masonry({
-  itemSelector: '.h1bracket',
-  });
-  columnWidth: 240
-});
-*/
 
 $(document).ready(function(){
 	$('.container').masonry({
@@ -55,17 +9,28 @@ $(document).ready(function(){
   });
 
 	$('.h1bracket').masonry({
+		//columnWidth: 200,
 		containerStyle: 'absolute',
   	itemSelector: '.h2bracket',
   	"stamp": ".h1box"
   });
 
   $('.h2bracket').masonry({
+  	//columnWidth: 300,
 		containerStyle: 'absolute',
   	itemSelector: '.h3bracket',
   	"stamp": ".h2box"
   });
 
+  //$container.masonry('reloadItems')
+
+
+ //  var p = $( '.h2bracket' );
+	// var position = p.position();
+
+ //  // var top = $('.h2bracket').top();
+ //  position.top = position.top - 50;
+ //  $('.h2bracket').attr("top", position.top);
 });
 
 // $(function(){
@@ -146,7 +111,7 @@ $(document).ready(function(){
  -->
 
 <div id="footer">
-	<p> Bullet Palette generates your notes into a beautiful online poster. Click <%= link_to 'here', root_path %> to make another one, or click <%= link_to "here", edit_text_map_path %> to edit this one. </p>
+	<p> Bullet Palette generates your notes into a beautiful online poster. Make <%= link_to 'New', root_path %> or Edit <%= link_to "this one", edit_text_map_path %>.</p>
 </div>
 
 <script>
