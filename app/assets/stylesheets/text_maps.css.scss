@@ -202,7 +202,7 @@ li {
 
 
 h1 {
-	font-family: "trackregular";
+	font-family: "trackregular", 'Roboto';
     border-bottom: 7px solid #30B4E2;
     display:inline-block;
     font-size:60px;
@@ -210,7 +210,7 @@ h1 {
 }
 
 h2 {
-	font-family: "trackregular";
+	font-family: "trackregular", 'Roboto';
 	margin:0px;
 	font-size:30px;
 	line-height:110%;
@@ -218,7 +218,7 @@ h2 {
 
 h3 {
 //    font-family: "odin_roundedregular";
-    font-family: 'odin_roundedlight';
+    font-family: 'odin_roundedlight, 'Roboto';
 	margin: 0px;
 	font-size: 25px;
 	line-height:130%;
