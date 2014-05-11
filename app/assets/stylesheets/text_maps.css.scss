@@ -7,6 +7,7 @@ body {
 	 margin: 0;
 	 padding: 0;
 	 text-align: center;
+	 word-wrap:break-word;
 }
 
  textarea { 
@@ -18,6 +19,12 @@ body {
     box-shadow: none;
     outline: none;
  }
+
+ .text-area::-webkit-input-value::after {
+    content:"is an online tool that visualizes your bullets into a *beautiful visual poster \A #*
+ ";
+}
+
 
 .submitButton {
 	//background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #000000), color-stop(1, #000000) );
@@ -129,10 +136,10 @@ body {
 	//
 	//padding:10px;
 	//margin-bottom:30px !important;
-	padding:10px;
-	width: 30%;
-	margin: 0 5px;
-	margin-bottom: -70px;
+	padding:1%;
+	width: 28%;
+	margin: 0 1%;
+	//margin-bottom: -70px;
 }
 
 .h1item, .h2item, .h3item, .h4item {
@@ -143,16 +150,17 @@ body {
 
 .h2box {
 	text-align:center;
+	margin-bottom:20px;
 }
 
 .h3bracket {
 	display:inline-block;
 
-	padding:10px;
+	padding:1%;
 	margin-bottom:5px;
 	width: 40%;
-	margin: 5px;
-	margin-bottom:12px !important;
+	margin: 1%;
+	margin-bottom:2% !important;
 }
 
 .h3box {
@@ -227,6 +235,11 @@ h4 {
 
 p {
 	font-family: 'Roboto', sans-serif;
+	margin:0;
+}
+
+.bulletmark {
+	color: #35BD37;
 }
 
 

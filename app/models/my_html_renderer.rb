@@ -61,7 +61,7 @@ class MyHTMLRenderer < Redcarpet::Render::HTML
        when :ordered
          "<div class='h2item  h3bracket bullets'><p>\n\n.nr step 0 1\n#{contents}\n</p></div>\n"
        when :unordered
-         "<div class='h2item h3bracket'><p>\n\n#{text}</p></div>\n"
+         "<div class='h2item h3bracket'><p>\n\n<span class='bulletmark'>●</span>#{text}</p></div>\n"
        end
   end
 
@@ -70,8 +70,9 @@ class MyHTMLRenderer < Redcarpet::Render::HTML
   # "<img src='http://#{title}.jpg.to'>"
     if link == nil
       "<p><img src='http://#{alt_text}.jpg.to' style='width:90%;'></p>"
+    else
+    "<p><img src='#{link}' alt='#{alt_text}' style='width: 90%;'/></p>"
     end
-    "<img src='#{link}' alt='#{alt_text}' style='width: 40%;'/>"
   end
 
 

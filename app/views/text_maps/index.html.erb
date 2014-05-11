@@ -1,8 +1,23 @@
 <body>
 
-  <h1 id="welcome">Bullet Pallette <i class="fa fa-flag-checkered"></i></h1>
+  <h1 id="welcome">Bullet Palette <i class="fa fa-flag-checkered"></i></h1>
   <%= form_for @text_map do |f| %>
-    <%= f.text_area :text, :class=>"text-area", :placeholder => "Enter text here..."%><br><br>
+    <%= f.text_area :text, :class=>"text-area", :value => '# Bullet Palette
+
+## turns your bullets into a beautiful visual poster
+### a list of bullets looks really boring
+### turn them into art with a click
+### ![visualnotes]()
+### ![colorfulnotetaking]()
+
+## Bullet Palette runs on markdown. Which means:
+- One # for a title
+- Two ## for an indent
+- Three ### for more indent
+- **Highlight text with two asterisks around it**
+- Bullet lists with -, *, or •
+- \!\[apple\]\(\) will output a picture of an ![apple]()
+- \[Link to Markdown\]\(http://daringfireball.net/projects/markdown\) will output a [Link to Markdown](http://daringfireball.net/projects/markdown)'%><br><br>
     <%= f.submit "Posterize", :class => "submitButton"%>
   <% end %>
 </body>
