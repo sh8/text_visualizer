@@ -20,11 +20,6 @@ body {
     outline: none;
  }
 
- .text-area::-webkit-input-value::after {
-    content:"is an online tool that visualizes your bullets into a *beautiful visual poster \A #*
- ";
-}
-
 
 .submitButton {
 	//background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #000000), color-stop(1, #000000) );
