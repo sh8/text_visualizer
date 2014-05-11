@@ -71,6 +71,7 @@ class MyHTMLRenderer < Redcarpet::Render::HTML
     if link == nil
       "<p><img src='http://#{alt_text}.jpg.to' style='width:90%;'></p>"
     end
+    "<img src='#{link}' alt='#{alt_text}' style='width: 40%;'/>"
   end
 
 
